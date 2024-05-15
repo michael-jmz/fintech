@@ -1,0 +1,107 @@
+<h1>3. Servicios Bancarios</h1>
+<p>
+  Determinar políticas y mecanismos necesarios para el proceso óptimo de las
+  transacciones realizadas en el área del servicio al cliente, con la finalidad
+  de dar una buena atención al cliente, optimizar tiempo, recursos y minimizar
+  el riesgo operativo
+</p>
+<hr />
+<div class="row">
+  <div class="col">
+    <ul>
+      <div>
+        <li
+          (click)="mostrarContenido('reclamo')"
+          [class.selected]="selectedOption === 'reclamo'"
+        >
+          <b>3.1 Proceso de Reclamos </b>
+        </li>
+        <div *ngIf="selectedOption === 'reclamo'">
+        <p>
+          En el servicio al cliente, abarcan desde productos diferenciados hasta
+          la gestión y solución de requerimientos. En cuanto a los resultados
+          obtenidos, se evidencia un esfuerzo de cada equipo mejorando tiempos
+          de respuesta, entendimiento de necesidades y activación de nuevos
+          flujos para mantener informado al cliente sobre sus requerimientos y
+          solicitudes.
+        </p>
+        </div>
+      </div>
+      <div>
+        <li
+          (click)="mostrarContenido('requerimientos')"
+          [class.selected]="selectedOption === 'requerimientos'"
+        >
+          <b>3.2. Proceso de Requerimientos </b>
+        </li>
+        <div *ngIf="selectedOption === 'requerimientos'">
+        <p>
+          Es una asociación estratégica entre un banco y Visa Inc., una empresa
+          global de tecnología de pagos. Esta franquicia permite al banco emitir
+          tarjetas de crédito o débito bajo la marca Visa, brindando a los
+          clientes empresariales una forma segura y conveniente de realizar
+          pagos y acceder a servicios financieros. Las tarjetas Visa ofrecen una
+          amplia aceptación en comercios y cajeros automáticos a nivel mundial,
+          lo que facilita los pagos nacionales e internacionales de las
+          empresas.
+        </p>
+        </div>
+      </div>
+      <div>
+        <li
+          (click)="mostrarContenido('emergencia')"
+          [class.selected]="selectedOption === 'emergencia'"
+        >
+          <b>3.3 Emisión de Cheques de Emergencia</b>
+        </li>
+        <div *ngIf="selectedOption === 'emergencia'">
+        <p>
+          La emisión de cheques es el proceso mediante el cual se elaboran y
+          entregan cheques bancarios a los clientes para que puedan realizar
+          pagos o transferencias de fondos. Esta actividad implica varios
+          aspectos clave:
+        </p>
+        </div>
+      </div>
+      <div>
+        <li
+          (click)="mostrarContenido('certificados')"
+          [class.selected]="selectedOption === 'certificados'"
+        >
+          <b>3.4. Entrega de certificados Bancarios </b>
+        </li>
+        <div *ngIf="selectedOption === 'certificados'">
+        <p>
+          La entrega de certificados bancarios es el proceso mediante el cual un
+          banco proporciona a sus clientes documentos oficiales que certifican
+          información específica sobre sus cuentas o transacciones financieras
+        </p>
+        </div>
+      </div>
+      <div>
+        <li
+          (click)="mostrarContenido('canales')"
+          [class.selected]="selectedOption === 'canales'"
+        >
+          <b>3.5. Afiliación a Canales Electrónicos </b>
+        </li>
+        <div *ngIf="selectedOption === 'canales'">
+        <p>
+          Canales electrónicos implementó una serie de iniciativas para mejorar
+          la experiencia en la Banca Digital, entre ellas, mejora en la
+          comunicación con los clientes vía envío de notificaciones, mejoras en
+          la plataforma tecnológica y campañas de educación sobre el uso de
+          canales para los clientes optimizando el proceso de Onboarding. En el
+          canal Call Center, de igual forma, se llevaron a cabo campañas para
+          mejorar la comunicación y servicio a los clientes, capacitación a los
+          agentes para cerrar brechas de servicio y seguimiento continuo a la
+          gestión del proveedor para garantizar los resultados.
+        </p>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div class="col">
+    <div [innerHTML]="contenido"></div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<h1>Casos de uso</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <ul>
+      <div>
+        <li (click)="mostrarContenido('cuAperturaCuenta')" [class.selected]="selectedOption === 'cuAperturaCuenta'">
+          <b>Apertura de cuentas</b>
+        </li>
+        <div *ngIf="selectedOption === 'cuAperturaCuenta'">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nisi quisquam laboriosam laborum accusamus ullam quo. Mollitia exercitationem ipsam temporibus magnam nesciunt, accusantium explicabo sit. Alias vel reiciendis numquam unde.</p>
+          <div>
+            <img src="assets/aperturaCuenta.jpeg" >
+
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <li (click)="mostrarContenido('cu')" [class.selected]="selectedOption === 'cu'">
+          <b>1.2 Ahorros programados</b>
+        </li>
+        <div *ngIf="selectedOption === 'cu'">
+          <p>Depositar una cantidad específica de dinero en una cuenta de ahorros que seleccione a su necesidad. Estos depósitos pueden realizarse de manera periódica, como mensualmente, y pueden estar sujetos a condiciones específicas. </p>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div class="col">
+    <div [innerHTML]="contenido"></div>
+  </div>
+</div>
+

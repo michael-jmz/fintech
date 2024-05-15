@@ -1,0 +1,42 @@
+<mat-card class="profile-card custom-card">
+  <mat-card-header>
+    <div class="profile-header">
+      <h1 class="profile-title">Perfil</h1>
+
+
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="profile-content">
+      <div class="profile-image">
+        <img src="assets/logo.png" alt="Profile Image">
+      </div>
+      <div class="profile-details">
+        <h2>Nombre: UTPL</h2>
+        <!-- Display editable fields when in edit mode -->
+        <ng-container *ngIf="isEditMode; else displayMode">
+          <p>
+            Address: <input [(ngModel)]="address" />
+          </p>
+          <!-- Other editable fields... -->
+        </ng-container>
+        <!-- Display non-editable fields when not in edit mode -->
+        <ng-template #displayMode>
+          <p>Numero de telefono: 0999999999</p>
+          <p>Direccion: {{ address }}</p>
+        </ng-template>
+
+         <button mat-raised-button color="accent" (click)="toggleEditMode()">
+        {{ isEditMode ? 'Cancel' : 'Edit' }}
+      </button>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <!-- Display Save and Cancel buttons when in edit mode -->
+    <ng-container *ngIf="isEditMode">
+      <button mat-raised-button color="primary" (click)="saveChanges()">Guardar</button>
+      <button mat-raised-button color="warn" (click)="cancelEdit()">Cancelar</button>
+    </ng-container>
+  </mat-card-actions>
+</mat-card>

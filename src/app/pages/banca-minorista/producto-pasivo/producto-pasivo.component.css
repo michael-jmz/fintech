@@ -1,0 +1,7 @@
+
+.selected {
+  color: #149cdb; /* Cambia el color de fondo al elemento seleccionado */
+}
+li {
+  color: #555555;
+}

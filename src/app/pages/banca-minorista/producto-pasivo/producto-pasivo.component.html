@@ -1,0 +1,50 @@
+<h1>1. Productos del pasivo</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <ul>
+      <div>
+        <li (click)="mostrarContenido('inversiones')" [class.selected]="selectedOption === 'inversiones'">
+          <b>1.1 Inversiones</b>
+        </li>
+        <div *ngIf="selectedOption === 'inversiones'">
+          <p>La habilidad de inversiones implica la capacidad para analizar, seleccionar y gestionar diversos instrumentos financieros y maximizar el rendimiento de la entidad bancaria. </p>
+        </div>
+      </div>
+
+      <div>
+        <li (click)="mostrarContenido('ahorros')" [class.selected]="selectedOption === 'ahorros'">
+          <b>1.2 Ahorros programados</b>
+        </li>
+        <div *ngIf="selectedOption === 'ahorros'">
+          <p>Depositar una cantidad específica de dinero en una cuenta de ahorros que seleccione a su necesidad. Estos depósitos pueden realizarse de manera periódica, como mensualmente, y pueden estar sujetos a condiciones específicas. </p>
+        </div>
+      </div>
+
+      <li (click)="mostrarContenido('renta')" [class.selected]="selectedOption === 'renta'">
+        <b>1.3 Renta a plazos</b>
+      </li>
+
+      <div>
+        <li (click)="mostrarContenido('apertura-premium')" [class.selected]="selectedOption === 'apertura-premium'">
+          <b>1.4 Apertura de cuentas corrientes premium</b>
+        </li>
+        <div *ngIf="selectedOption === 'apertura-premium'">
+          <p>La apertura de cuentas corrientes premium se refiere al proceso por el que un banco permite a sus clientes abrir una cuenta corriente con características y beneficios superiores que las normas. Estas cuentas están dirigidas a clientes con un perfil financiero más alto y pueden ofrecer una amplia gama de ventajas, como tasas de interés más altas, servicios bancarios personalizados, acceso a asesores financieros personales, entre otros. </p>
+        </div>
+      </div>
+
+      <div>
+        <li (click)="mostrarContenido('apertura-ahorros')" [class.selected]="selectedOption === 'apertura-ahorros'">
+          <b>1.5 Apertura de cuentas corrientes de ahorros</b>
+        </li>
+        <div *ngIf="selectedOption === 'apertura-ahorros'">
+          <p>La apertura de cuentas corrientes de ahorro se refiere al proceso por el que un banco permite a sus clientes abrir una para depositar fondos y ganar intereses sobre el saldo depositado. Estas cuentas fomentan el ahorro y ofrecen beneficios, como tasas de interés competitivas y acceso a fondos. </p>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div class="col">
+    <div [innerHTML]="contenido"></div>
+  </div>
+</div>

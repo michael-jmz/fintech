@@ -1,0 +1,28 @@
+<h1>2. Producto del Activo</h1>
+<p>Se refieren a los diferentes tipos de productos financieros que un banco ofrece para ayudar a las empresas a financiar sus operaciones. Estos productos del activo incluyen, entre otros, préstamos comerciales, líneas de crédito, arrendamiento financiero y descuento de facturas. Estos productos proporcionan a las empresas el capital necesario para invertir en activos fijos, financiar el crecimiento del negocio y gestionar su flujo de efectivo. </p>
+<hr>
+<div class="row">
+  <div class="col">
+    <ul>
+      <div>
+        <li (click)="mostrarContenido('credito')" [class.selected]="selectedOption === 'credito'">
+          <b>2.1 Colocación de crédito </b>
+        </li>
+        <div *ngIf="selectedOption === 'credito'">
+          <p>La habilidad de inversiones implica la capacidad para analizar, seleccionar y gestionar diversos instrumentos financieros y maximizar el rendimiento de la entidad bancaria. </p>
+        </div>
+      </div>
+      <div>
+        <li (click)="mostrarContenido('visa')" [class.selected]="selectedOption === 'visa'">
+          <b>2.2 Franquicia visa</b>
+        </li>
+        <div *ngIf="selectedOption === 'visa'">
+          <p>Es una asociación estratégica entre un banco y Visa Inc., una empresa global de tecnología de pagos. Esta franquicia permite al banco emitir tarjetas de crédito o débito bajo la marca Visa, brindando a los clientes empresariales una forma segura y conveniente de realizar pagos y acceder a servicios financieros. Las tarjetas Visa ofrecen una amplia aceptación en comercios y cajeros automáticos a nivel mundial, lo que facilita los pagos nacionales e internacionales de las empresas. </p>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div class="col">
+    <div [innerHTML]="contenido"></div>
+  </div>
+</div>
