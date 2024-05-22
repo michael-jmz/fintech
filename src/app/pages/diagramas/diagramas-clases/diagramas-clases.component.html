@@ -1,1 +1,34 @@
-<p>diagramas-clases works!</p>
+<h1>Diagrama de Clases</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <ul>
+      <div>
+        <li (click)="mostrarContenido('claseAperturaCuenta')" [class.selected]="selectedOption === 'claseAperturaCuenta'">
+          <b>Apertura de cuenta</b>
+        </li>
+        <div *ngIf="selectedOption === 'claseAperturaCuenta'">
+          <div>
+            <img src="assets/diagramas/clases/aperturaCuenta.jpeg" >
+          </div>
+        </div>
+      </div>
+      <div>
+        <li (click)="mostrarContenido('dcAperturaCuentaOnline')" [class.selected]="selectedOption === 'dcAperturaCuentaOnline'">
+          <b>Apertura de cuentas Online</b>
+        </li>
+        <div *ngIf="selectedOption === 'dcAperturaCuentaOnline'">
+          <div>
+            <img src="assets/diagramas/clases/dcAperturaCuentaOnline.png" >
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div class="col">
+    <div [innerHTML]="contenido"></div>
+  </div>
+</div>
+
+
+

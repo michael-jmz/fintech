@@ -34,6 +34,8 @@ import { ServiciosBancariosComponent } from './pages/servicios-bancarios/servici
 import { DiagramasComponent } from './pages/diagramas/diagramas.component';
 import { CasosUsoComponent } from './pages/diagramas/casos-uso/casos-uso.component';
 import { DiagramasClasesComponent } from './pages/diagramas/diagramas-clases/diagramas-clases.component';
+import { DiagramasSecuenciaComponent } from './pages/diagramas/diagramas-secuencia/diagramas-secuencia.component';
+import { DiagramasRobustezComponent } from './pages/diagramas/diagramas-robustez/diagramas-robustez.component';
 
 // Import FormsModule
 @NgModule({
@@ -56,6 +58,8 @@ import { DiagramasClasesComponent } from './pages/diagramas/diagramas-clases/dia
     DiagramasComponent,
     CasosUsoComponent,
     DiagramasClasesComponent,
+    DiagramasSecuenciaComponent,
+    DiagramasRobustezComponent,
   ],
   imports: [
     BrowserModule,

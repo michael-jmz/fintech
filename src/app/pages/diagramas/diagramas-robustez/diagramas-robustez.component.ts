@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-casos-uso',
-  templateUrl: './casos-uso.component.html',
-  styleUrls: ['./casos-uso.component.css']
+  selector: 'app-diagramas-robustez',
+  templateUrl: './diagramas-robustez.component.html',
+  styleUrls: ['./diagramas-robustez.component.css']
 })
-export class CasosUsoComponent {
+export class DiagramasRobustezComponent {
   contenido: string = '';
   selectedOption: string = ''; // Define la variable selectedOption
 
@@ -13,17 +13,13 @@ export class CasosUsoComponent {
     this.selectedOption = opcion; // Actualiza selectedOption con la opción seleccionada
 
     switch (opcion) {
-      case 'cuAperturaCuenta':
+      case 'drAperturaCuentaOnline':
         this.contenido =``;
-        break;
-      case 'cu':
-        this.contenido =`cuAperturaCuentaOnline`;
         break;
       default:
         this.contenido = '';
     }
   }
-
 
 
 }

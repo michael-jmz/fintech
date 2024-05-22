@@ -1,0 +1,34 @@
+<h1>Diagrama de Secuencia</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <ul>
+      <div>
+        <li (click)="mostrarContenido('dsAperturaCuenta')" [class.selected]="selectedOption === 'dsAperturaCuenta'">
+          <b>Apertura de cuenta</b>
+        </li>
+        <div *ngIf="selectedOption === 'dsAperturaCuenta'">
+          <div>
+            <img src="" >
+          </div>
+        </div>
+      </div>
+      <div>
+        <li (click)="mostrarContenido('dsAperturaCuentaOnline')" [class.selected]="selectedOption === 'dsAperturaCuentaOnline'">
+          <b>Apertura de cuentas Online</b>
+        </li>
+        <div *ngIf="selectedOption === 'dsAperturaCuentaOnline'">
+          <div>
+            <img src="assets/diagramas/secuencia/dsAperturaCuentaOnline.png" >
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div class="col">
+    <div [innerHTML]="contenido"></div>
+  </div>
+</div>
+
+
+
