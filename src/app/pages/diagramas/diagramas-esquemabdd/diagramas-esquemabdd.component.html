@@ -1,0 +1,24 @@
+<h1>Esquema de base de datos</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <ul>
+      <div>
+        <li (click)="mostrarContenido('esquemabdd')" [class.selected]="selectedOption === 'esquemabdd'">
+          <b>Esquema</b>
+        </li>
+        <div *ngIf="selectedOption === 'esquemabdd'">
+          <div>
+            <img src="assets/diagramas/esquemas/esquemabdd.png" >
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div class="col">
+    <div [innerHTML]="contenido"></div>
+  </div>
+</div>
+
+
+

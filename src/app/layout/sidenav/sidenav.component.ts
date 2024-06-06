@@ -18,8 +18,14 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 export class SidebarComponent implements OnInit {
 
   isSidebarVisible = true;
-  isSubmenuOpen = false;
   selectedMenuItem: string | null = null; // Variable para mantener el elemento seleccionado
+
+  // Objeto para el estado de los submenús
+  submenus: { [key: string]: boolean } = {
+    bancaMinorista: false,
+    serviciosBancarios: false,
+    diagramas: false
+  };
 
   constructor(private sidebarService: SidebarService) {}
 
@@ -34,13 +40,25 @@ export class SidebarComponent implements OnInit {
     this.sidebarService.toggleSidebar(); // Toggle sidebar state
   }
 
-  toggleSubmenu() {
-    this.isSubmenuOpen = !this.isSubmenuOpen;
+  // Método para alternar submenús
+  toggleSubmenu(menu: string) {
+    // Cierra todos los submenús, excepto el que se está seleccionando
+    for (let key in this.submenus) {
+      if (key !== menu) {
+        this.submenus[key] = false;
+      }
+    }
+    // Alterna el submenú seleccionado
+    this.submenus[menu] = !this.submenus[menu];
+  }
+
+  // Método para verificar si un submenú está abierto
+  isSubmenuOpen(menu: string): boolean {
+    return this.submenus[menu];
   }
 
   // Método para establecer el elemento seleccionado
   selectMenuItem(menuItem: string) {
     this.selectedMenuItem = menuItem;
   }
-
 }

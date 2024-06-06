@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-diagramas-robustez',
-  templateUrl: './diagramas-robustez.component.html',
-  styleUrls: ['./diagramas-robustez.component.scss']
+  selector: 'app-diagramas-esquemabdd',
+  templateUrl: './diagramas-esquemabdd.component.html',
+  styleUrls: ['./diagramas-esquemabdd.component.css']
 })
-export class DiagramasRobustezComponent {
+export class DiagramasEsquemabddComponent {
   contenido: string = '';
   selectedOption: string = ''; // Define la variable selectedOption
 
@@ -13,13 +13,12 @@ export class DiagramasRobustezComponent {
     this.selectedOption = opcion; // Actualiza selectedOption con la opción seleccionada
 
     switch (opcion) {
-      case 'drAperturaCuentaOnline':
+      case 'esquemabdd':
         this.contenido =``;
         break;
       default:
         this.contenido = '';
     }
   }
-
 
 }

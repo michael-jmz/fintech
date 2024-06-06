@@ -36,6 +36,7 @@ import { CasosUsoComponent } from './pages/diagramas/casos-uso/casos-uso.compone
 import { DiagramasClasesComponent } from './pages/diagramas/diagramas-clases/diagramas-clases.component';
 import { DiagramasSecuenciaComponent } from './pages/diagramas/diagramas-secuencia/diagramas-secuencia.component';
 import { DiagramasRobustezComponent } from './pages/diagramas/diagramas-robustez/diagramas-robustez.component';
+import { DiagramasEsquemabddComponent } from './pages/diagramas/diagramas-esquemabdd/diagramas-esquemabdd.component';
 
 // Import FormsModule
 @NgModule({
@@ -60,6 +61,7 @@ import { DiagramasRobustezComponent } from './pages/diagramas/diagramas-robustez
     DiagramasClasesComponent,
     DiagramasSecuenciaComponent,
     DiagramasRobustezComponent,
+    DiagramasEsquemabddComponent,
   ],
   imports: [
     BrowserModule,

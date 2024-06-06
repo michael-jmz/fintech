@@ -13,6 +13,7 @@ import { CasosUsoComponent } from './pages/diagramas/casos-uso/casos-uso.compone
 import { DiagramasClasesComponent } from './pages/diagramas/diagramas-clases/diagramas-clases.component';
 import { DiagramasSecuenciaComponent } from './pages/diagramas/diagramas-secuencia/diagramas-secuencia.component';
 import { DiagramasRobustezComponent } from './pages/diagramas/diagramas-robustez/diagramas-robustez.component';
+import { DiagramasEsquemabddComponent } from './pages/diagramas/diagramas-esquemabdd/diagramas-esquemabdd.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'diagramas_secuencia', component: DiagramasSecuenciaComponent},
   { path: 'diagramas_clases', component: DiagramasClasesComponent },
   { path: 'diagramas_robustez', component: DiagramasRobustezComponent },
+  { path: 'esquemabdd', component: DiagramasEsquemabddComponent},
 
 
 
