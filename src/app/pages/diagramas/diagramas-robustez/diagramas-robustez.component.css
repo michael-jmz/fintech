@@ -4,3 +4,20 @@
 li {
   color: #555555;
 }
+/* Styles specific to the diagram-robustes component */
+
+
+
+.image-container {
+  width: 100%;
+  text-align: center; /* Center the image */
+  overflow: auto;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image does not overflow its container */
+  height: auto;
+  display: inline-block; /* Center the image horizontally */
+}
+
+

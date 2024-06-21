@@ -1,0 +1,56 @@
+
+<h1>Prototipo Figma</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <ul>
+      <div>
+        <li (click)="mostrarContenido('cicod')" [class.selected]="selectedOption === 'cicod'">
+          <b>Ingreso de cédula y código</b>
+        </li>
+        <div *ngIf="selectedOption === 'cicod'">
+          <img src="assets/figma/cedulaCod.png" >
+        </div>
+      </div>
+      <div>
+        <li (click)="mostrarContenido('info')" [class.selected]="selectedOption === 'info'">
+          <b>Información personal</b>
+        </li>
+        <div *ngIf="selectedOption === 'info'">
+          <img src="assets/figma/informacionPersonal.png" >
+
+        </div>
+      </div>
+      <div>
+        <li (click)="mostrarContenido('domicilio')" [class.selected]="selectedOption === 'domicilio'">
+          <b>Domiclio Tributario</b>
+        </li>
+        <div *ngIf="selectedOption === 'domicilio'">
+          <img src="assets/figma/domicilioTrubutario.png" >
+        </div>
+      </div>
+      <div>
+        <li (click)="mostrarContenido('temrinosCondiciones')" [class.selected]="selectedOption === 'temrinosCondiciones'">
+          <b>Terminos y Condiciones</b>
+        </li>
+        <div *ngIf="selectedOption === 'temrinosCondiciones'">
+          <img src="assets/figma/temrinosCondiciones.png" >
+        </div>
+      </div>
+      <div>
+        <li (click)="mostrarContenido('loginHome')" [class.selected]="selectedOption === 'loginHome'">
+          <b>Home Bank 365</b>
+        </li>
+        <div *ngIf="selectedOption === 'loginHome'">
+          <img src="assets/figma/loginHome.png" >
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div class="col">
+    <div [innerHTML]="contenido"></div>
+  </div>
+</div>
+
+
+

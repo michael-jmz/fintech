@@ -22,6 +22,8 @@ export class SidebarComponent implements OnInit {
 
   // Objeto para el estado de los submenús
   submenus: { [key: string]: boolean } = {
+    analisis: false,
+    desarrollo: false,
     bancaMinorista: false,
     serviciosBancarios: false,
     diagramas: false
@@ -42,14 +44,10 @@ export class SidebarComponent implements OnInit {
 
   // Método para alternar submenús
   toggleSubmenu(menu: string) {
-    // Cierra todos los submenús, excepto el que se está seleccionando
-    for (let key in this.submenus) {
-      if (key !== menu) {
-        this.submenus[key] = false;
-      }
-    }
+    console.log(`Toggling menu: ${menu}`); // Debug
     // Alterna el submenú seleccionado
     this.submenus[menu] = !this.submenus[menu];
+    console.log(this.submenus); // Debug
   }
 
   // Método para verificar si un submenú está abierto

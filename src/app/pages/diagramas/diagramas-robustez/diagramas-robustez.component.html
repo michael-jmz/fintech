@@ -1,15 +1,15 @@
 <h1>Diagrama de Robustez</h1>
 <hr>
 <div class="row">
-  <div class="col">
+  <div class="col-12">
     <ul>
       <div>
         <li (click)="mostrarContenido('drAperturaCuentaOnline')" [class.selected]="selectedOption === 'drAperturaCuentaOnline'">
           <b>Apertura de cuentas Online</b>
         </li>
         <div *ngIf="selectedOption === 'drAperturaCuentaOnline'">
-          <div>
-            <img src="assets/diagramas/robustez/drAperturaCuentaOnline.png" >
+          <div class="image-container">
+            <img src="assets/diagramas/robustez/drAperturaCuentaOnline.jpg" >
           </div>
         </div>
       </div>
@@ -19,6 +19,7 @@
     <div [innerHTML]="contenido"></div>
   </div>
 </div>
+
 
 
 
