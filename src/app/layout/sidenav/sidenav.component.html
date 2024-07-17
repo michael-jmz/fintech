@@ -1,6 +1,23 @@
 <div class="sidebar" [ngClass]="{ 'showSidebar': isSidebarVisible, 'hideSidebar': !isSidebarVisible }" [@fadeInOut]>
   <ul>
     <li>
+      <a (click)="toggleSubmenu('equipo')" routerLinkActive="active">
+        <span class="menu-text">EQUIPO</span>
+        <span class="sub-menu-icon">
+          <mat-icon>{{ isSubmenuOpen('equipo') ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+        </span>
+      </a>
+      <ul *ngIf="isSubmenuOpen('equipo')" class="sub-menu">
+        <li>
+          <a routerLink="/equipo" routerLinkActive="active" (click)="selectMenuItem('mapaCapacidades')">
+            <span class="menu-text">Equipo Fintech</span>
+          </a>
+        </li>
+      <li><a routerLink="/presentacion" routerLinkActive="active" (click)="selectMenuItem('presentacion')"><span class="menu-text">Presentacion</span></a></li>
+
+      </ul>
+      </li>
+    <li>
       <a (click)="toggleSubmenu('analisis')" routerLinkActive="active">
         <span class="menu-text">ANALISIS</span>
         <span class="sub-menu-icon">
@@ -45,8 +62,8 @@
           </a>
           <ul *ngIf="isSubmenuOpen('diagramas')" class="sub-menu">
             <li><a routerLink="/casos_uso" routerLinkActive="active" (click)="selectMenuItem('casosUso')"><span class="menu-text">Casos de uso</span></a></li>
-            <li><a routerLink="/diagramas_secuencia" routerLinkActive="active" (click)="selectMenuItem('diagramasSecuencia')"><span class="menu-text">Diagramas de secuencia</span></a></li>
             <li><a routerLink="/diagramas_clases" routerLinkActive="active" (click)="selectMenuItem('diagramasClases')"><span class="menu-text">Diagramas de clase</span></a></li>
+            <li><a routerLink="/diagramas_secuencia" routerLinkActive="active" (click)="selectMenuItem('diagramasSecuencia')"><span class="menu-text">Diagramas de secuencia</span></a></li>
             <li><a routerLink="/diagramas_robustez" routerLinkActive="active" (click)="selectMenuItem('diagramasRobustez')"><span class="menu-text">Diagramas de robustez</span></a></li>
             <li><a routerLink="/esquemabdd" routerLinkActive="active" (click)="selectMenuItem('esquemabdd')"><span class="menu-text">Esquema de datos</span></a></li>
           </ul>
@@ -76,7 +93,32 @@
       </ul>
     </li>
 
-<!--  -->
+    <!-- Arquitectura -->
+    <li>
+    <a (click)="toggleSubmenu('arq')" routerLinkActive="active">
+      <span class="menu-text">ARQUITECTURA</span>
+      <span class="sub-menu-icon">
+        <mat-icon>{{ isSubmenuOpen('arq') ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+      </span>
+    </a>
+    <ul *ngIf="isSubmenuOpen('arq')" class="sub-menu">
+      <li><a routerLink="/despliegue" routerLinkActive="active" (click)="selectMenuItem('despliegue')"><span class="menu-text">Digrama de despligue</span></a></li>
+      <li><a routerLink="/arquitectura" routerLinkActive="active" (click)="selectMenuItem('arquitectura')"><span class="menu-text">Digrama de despligue</span></a></li>
+    </ul>
+
+<!-- DevOps -->
+    <li>
+      <a (click)="toggleSubmenu('devops')" routerLinkActive="active">
+        <span class="menu-text">DevOps</span>
+        <span class="sub-menu-icon">
+          <mat-icon>{{ isSubmenuOpen('devops') ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+        </span>
+      </a>
+      <ul *ngIf="isSubmenuOpen('devops')" class="sub-menu">
+        <li><a routerLink="/ci" routerLinkActive="active" (click)="selectMenuItem('ci')"><span class="menu-text">CI</span></a></li>
+        <li><a routerLink="/cd" routerLinkActive="active" (click)="selectMenuItem('cd')"><span class="menu-text">CD</span></a></li>
+      </ul>
+
     <hr>
       <li>
       <a routerLink="/settings" routerLinkActive="active" (click)="selectMenuItem('settings')">

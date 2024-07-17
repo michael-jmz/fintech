@@ -15,9 +15,19 @@ import { DiagramasSecuenciaComponent } from './pages/diagramas/diagramas-secuenc
 import { DiagramasRobustezComponent } from './pages/diagramas/diagramas-robustez/diagramas-robustez.component';
 import { DiagramasEsquemabddComponent } from './pages/diagramas/diagramas-esquemabdd/diagramas-esquemabdd.component';
 import { PrototipoComponent } from './pages/desarrollo/prototipo/prototipo.component';
+import { EquipoComponent } from './pages/equipo/equipo.component';
+import { DespligueComponent } from './pages/arquitectura/despligue/despligue.component';
+import { ArquitecturaComponent } from './pages/arquitectura/arquitectura/arquitectura.component';
+import { CiComponent } from './pages/devops/ci/ci.component';
+import { CdComponent } from './pages/devops/cd/cd.component';
+import { PresentacionComponent } from './pages/equipo/presentacion/presentacion.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+
+  {path: 'equipo', component: EquipoComponent},
+  {path: 'presentacion', component: PresentacionComponent},
+
   { path: 'inicio', component: HomeComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'profile', component: ProfileComponent },
@@ -25,6 +35,7 @@ const routes: Routes = [
   { path: 'banca-minorista', component: BancaMinoristaComponent },
   { path: 'banca-minorista/producto-pasivo', component: ProductoPasivoComponent },
   { path: 'servicios', component: ServiciosBancariosComponent },
+
 
 
   //pasivo
@@ -40,6 +51,18 @@ const routes: Routes = [
 
   //Desarrollo
   { path: 'prototipo', component: PrototipoComponent},
+
+
+  //Arquitectura
+  { path: 'despliegue', component: DespligueComponent},
+  { path: 'arquitectura', component: ArquitecturaComponent},
+
+  //DevOps
+  { path: 'ci', component: CiComponent},
+  { path: 'cd', component: CdComponent},
+
+
+  { path: '**', redirectTo: 'equipo' }, // redirige al dashboard para cualquier otra ruta
 
 
 

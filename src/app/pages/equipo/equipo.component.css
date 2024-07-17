@@ -1,0 +1,59 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres tarjetas por fila */
+  gap: 16px;
+  padding: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-photo {
+  width: 200px; /* Ancho de la foto */
+  height: 200px; /* Altura de la foto */
+  border-radius: 50%; /* Hace la foto ovalada */
+  overflow: hidden; /* Recorta cualquier contenido que sobresalga */
+  margin: 0 auto 10px; /* Margen inferior para separar de la información */
+}
+
+
+.card-photo img {
+  width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+  height: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+  object-fit: cover; /* Escala la imagen para llenar el contenedor sin distorsión */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-text {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.sub-menu-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mat-icon {
+  vertical-align: middle;
+}
+
+p{
+  color:#149cdb;
+}
+
+
+
+

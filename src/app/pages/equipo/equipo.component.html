@@ -1,0 +1,14 @@
+<h1>EQUIPO</h1>
+<hr>
+<h2 class="menu-text">DevOps</h2>
+      <div class="card-container">
+        <div *ngFor="let member of equipo" class="card">
+          <div class="card-photo">
+            <img [src]="member.photoUrl" alt="Foto de {{ member.name }}">
+          </div>
+          <div class="card-content">
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.role }}</p>
+          </div>
+        </div>
+

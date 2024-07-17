@@ -17,16 +17,31 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 export class SidebarComponent implements OnInit {
 
+  equipo = [
+    { name: 'Integrante 1', role: 'Rol 1' },
+    { name: 'Integrante 2', role: 'Rol 2' },
+    { name: 'Integrante 3', role: 'Rol 3' },
+    { name: 'Integrante 4', role: 'Rol 4' },
+    { name: 'Integrante 5', role: 'Rol 5' },
+    { name: 'Integrante 6', role: 'Rol 6' }
+  ];
+
   isSidebarVisible = true;
   selectedMenuItem: string | null = null; // Variable para mantener el elemento seleccionado
 
   // Objeto para el estado de los submenús
   submenus: { [key: string]: boolean } = {
+    equipo: false,
+    presentacion:false,
     analisis: false,
     desarrollo: false,
     bancaMinorista: false,
     serviciosBancarios: false,
-    diagramas: false
+    diagramas: false,
+    despliegue: false,
+    arquitectura: false,
+    ci:false,
+    cd:false,
   };
 
   constructor(private sidebarService: SidebarService) {}

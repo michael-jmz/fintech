@@ -39,6 +39,13 @@ import { DiagramasRobustezComponent } from './pages/diagramas/diagramas-robustez
 import { DiagramasEsquemabddComponent } from './pages/diagramas/diagramas-esquemabdd/diagramas-esquemabdd.component';
 import { DesarrolloComponent } from './pages/desarrollo/desarrollo.component';
 import { PrototipoComponent } from './pages/desarrollo/prototipo/prototipo.component';
+import { EquipoComponent } from './pages/equipo/equipo.component';
+import { DespligueComponent } from './pages/arquitectura/despligue/despligue.component';
+import { ArquitecturaComponent } from './pages/arquitectura/arquitectura/arquitectura.component';
+import { CiComponent } from './pages/devops/ci/ci.component';
+import { CdComponent } from './pages/devops/cd/cd.component';
+import { PresentacionComponent } from './pages/equipo/presentacion/presentacion.component';
+
 
 // Import FormsModule
 @NgModule({
@@ -66,6 +73,13 @@ import { PrototipoComponent } from './pages/desarrollo/prototipo/prototipo.compo
     DiagramasEsquemabddComponent,
     DesarrolloComponent,
     PrototipoComponent,
+    EquipoComponent,
+    DespligueComponent,
+    ArquitecturaComponent,
+    CiComponent,
+    CdComponent,
+    PresentacionComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -81,7 +95,9 @@ import { PrototipoComponent } from './pages/desarrollo/prototipo/prototipo.compo
     MatButtonModule,
     MatCardModule,
     FormsModule,
-    MatTableModule
+    MatTableModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

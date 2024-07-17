@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-casos-uso',
   templateUrl: './casos-uso.component.html',
@@ -16,14 +17,14 @@ export class CasosUsoComponent {
       case 'cuAperturaCuenta':
         this.contenido =``;
         break;
-      case 'cu':
-        this.contenido =`cuAperturaCuentaOnline`;
+      case 'cuAperturaCuentaOnline':
+        this.contenido ='<img src="assets/diagramas/casos-uso/especificacion.png">';
+        break;
+      case 'especificacion':
+        this.contenido = '';
         break;
       default:
         this.contenido = '';
     }
   }
-
-
-
 }
