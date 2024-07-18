@@ -21,6 +21,7 @@ import { ArquitecturaComponent } from './pages/arquitectura/arquitectura/arquite
 import { CiComponent } from './pages/devops/ci/ci.component';
 import { CdComponent } from './pages/devops/cd/cd.component';
 import { PresentacionComponent } from './pages/equipo/presentacion/presentacion.component';
+import { PipelineComponent } from './pages/devops/pipeline/pipeline.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -58,6 +59,7 @@ const routes: Routes = [
   { path: 'arquitectura', component: ArquitecturaComponent},
 
   //DevOps
+  { path: 'pipeline', component: PipelineComponent},
   { path: 'ci', component: CiComponent},
   { path: 'cd', component: CdComponent},
 

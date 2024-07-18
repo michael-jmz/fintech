@@ -45,6 +45,7 @@ import { ArquitecturaComponent } from './pages/arquitectura/arquitectura/arquite
 import { CiComponent } from './pages/devops/ci/ci.component';
 import { CdComponent } from './pages/devops/cd/cd.component';
 import { PresentacionComponent } from './pages/equipo/presentacion/presentacion.component';
+import { PipelineComponent } from './pages/devops/pipeline/pipeline.component';
 
 
 // Import FormsModule
@@ -79,6 +80,7 @@ import { PresentacionComponent } from './pages/equipo/presentacion/presentacion.
     CiComponent,
     CdComponent,
     PresentacionComponent,
+    PipelineComponent,
 
   ],
   imports: [

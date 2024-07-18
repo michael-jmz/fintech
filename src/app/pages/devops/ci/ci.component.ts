@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./ci.component.scss']
 })
 export class CiComponent {
+  selectedOption: string = ''; // Define la variable selectedOption
+
+  mostrarContenido(opcion: string) {
+    this.selectedOption = opcion; // Actualiza selectedOption con la opción seleccionada
+  }
 
 }
+

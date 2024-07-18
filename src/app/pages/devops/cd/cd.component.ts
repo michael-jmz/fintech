@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./cd.component.scss']
 })
 export class CdComponent {
+  selectedOption: string = ''; // Define la variable selectedOption
+
+  mostrarContenido(opcion: string) {
+    this.selectedOption = opcion; // Actualiza selectedOption con la opción seleccionada
+  }
 
 }
+
+

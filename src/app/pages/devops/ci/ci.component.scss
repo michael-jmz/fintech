@@ -1,0 +1,67 @@
+/* styles.css */
+.selected {
+  color: #1a73e8; /* Cambia el color del texto al elemento seleccionado */
+}
+
+li {
+  color: #555555;
+  cursor: pointer; /* Cambia el cursor al pasar sobre los elementos de la lista */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Mejora de estilos para las tarjetas */
+.card {
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transición suave */
+  border: 1px solid #dee2e6; /* Borde sutil */
+}
+
+.card:hover {
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño al pasar el ratón */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el ratón */
+}
+
+.card-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #f8f9fa; /* Color de fondo de la cabecera */
+  padding: 10px; /* Padding para la cabecera */
+  border-bottom: 1px solid #dee2e6; /* Borde inferior para la cabecera */
+  color: #1a73e8; /* Color del texto de la cabecera */
+}
+
+.card-body {
+  padding: 20px; /* Padding para el cuerpo de la tarjeta */
+}
+
+.fixed-size-img {
+  max-width: 200px; /* Ajusta el ancho máximo deseado */
+  max-height: 100px; /* Ajusta la altura máxima deseada */
+  width: auto;
+  height: auto;
+}
+
+.image-container {
+  flex: 1; /* Hace que los contenedores se distribuyan equitativamente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Padding alrededor de las imágenes */
+}
+
+/* Estilo para mejorar la estética del borde */
+.card {
+  border: 1px solid #1a73e8; /* Borde azul */
+}
+
+.card-header {
+  background-color: #e9f5fe; /* Fondo azul claro */
+  color: #1a73e8; /* Color del texto */
+}

@@ -1,1 +1,52 @@
-<p>cd works!</p>
+
+<h1>Despliegue Continua</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <ul class="list-unstyled">
+      <div class="card mb-3">
+        <li (click)="mostrarContenido('deploy')" [class.selected]="selectedOption === 'deploy'" class="card-header">
+          <h4><i class="fa-solid fa-list-check"></i> Delpoy</h4>
+        </li>
+        <div *ngIf="selectedOption === 'deploy'" class="card-body">
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="image-container">
+              <img src="assets/devops/cd/deploy/play.png" class="fixed-size-img">
+            </div>
+            <div class="image-container">
+              <img src="assets/devops/cd/deploy/kuber.png" class="fixed-size-img">
+            </div>
+            <div class="image-container">
+              <img src="assets/devops/cd/deploy/cloud.png" class="fixed-size-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <li (click)="mostrarContenido('code')" [class.selected]="selectedOption === 'code'" class="card-header">
+          <h4><i class="fa-solid fa-code"></i> Operate</h4>
+        </li>
+        <div *ngIf="selectedOption === 'code'" class="card-body">
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="image-container">
+              <img src="assets/devops/cd/deploy/cloud.png" class="fixed-size-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <li (click)="mostrarContenido('test')" [class.selected]="selectedOption === 'test'" class="card-header">
+          <h4><i class="fa-solid fa-gears"></i> Monitor</h4>
+        </li>
+        <div *ngIf="selectedOption === 'test'" class="card-body">
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="image-container">
+              <img src="assets/devops/cd/test/analytics.png" class="fixed-size-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>

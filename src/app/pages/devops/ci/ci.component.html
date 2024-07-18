@@ -1,1 +1,74 @@
-<p>ci works!</p>
+<h1>Integración Continua</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <ul class="list-unstyled">
+      <div class="card mb-3">
+        <li (click)="mostrarContenido('plan')" [class.selected]="selectedOption === 'plan'" class="card-header">
+          <h4><i class="fa-solid fa-group-arrows-rotate"></i> Plan</h4>
+        </li>
+        <div *ngIf="selectedOption === 'plan'" class="card-body">
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="image-container">
+              <img src="assets/devops/ci/plan/jira.png" class="fixed-size-img">
+            </div>
+            <div class="image-container">
+              <img src="assets/devops/ci/plan/discord.png" class="fixed-size-img">
+            </div>
+            <div class="image-container">
+              <img src="assets/devops/ci/plan/figma.png" class="fixed-size-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <li (click)="mostrarContenido('code')" [class.selected]="selectedOption === 'code'" class="card-header">
+          <h4><i class="fa-solid fa-code"></i> Code</h4>
+        </li>
+        <div *ngIf="selectedOption === 'code'" class="card-body">
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="image-container">
+              <img src="assets/devops/ci/code/flutter.png" class="fixed-size-img">
+            </div>
+            <div class="image-container">
+              <img src="assets/devops/ci/code/vs.jpg" class="fixed-size-img">
+            </div>
+            <div class="image-container">
+              <img src="assets/devops/ci/code/net.png" class="fixed-size-img">
+            </div>
+            <div class="image-container">
+              <img src="assets/devops/ci/code/sql.png" class="fixed-size-img">
+            </div>
+            <div class="image-container">
+              <img src="assets/devops/ci/code/github.png" class="fixed-size-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <li (click)="mostrarContenido('build')" [class.selected]="selectedOption === 'build'" class="card-header">
+          <h4><i class="fa-solid fa-gears"></i> Build</h4>
+        </li>
+        <div *ngIf="selectedOption === 'build'" class="card-body">
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="image-container">
+              <img src="assets/devops/ci/build/docker.png" class="fixed-size-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <li (click)="mostrarContenido('test')" [class.selected]="selectedOption === 'test'" class="card-header">
+          <h4><i class="fa-solid fa-vial-virus"></i> Test</h4>
+        </li>
+        <div *ngIf="selectedOption === 'test'" class="card-body">
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="image-container">
+              <img src="assets/devops/ci/test/junit.png" class="fixed-size-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>

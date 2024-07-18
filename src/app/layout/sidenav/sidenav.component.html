@@ -13,7 +13,7 @@
             <span class="menu-text">Equipo Fintech</span>
           </a>
         </li>
-      <li><a routerLink="/presentacion" routerLinkActive="active" (click)="selectMenuItem('presentacion')"><span class="menu-text">Presentacion</span></a></li>
+      <!-- <li><a routerLink="/presentacion" routerLinkActive="active" (click)="selectMenuItem('presentacion')"><span class="menu-text">Presentacion</span></a></li> -->
 
       </ul>
       </li>
@@ -25,6 +25,11 @@
         </span>
       </a>
       <ul *ngIf="isSubmenuOpen('analisis')" class="sub-menu">
+        <li>
+          <a routerLink="/presentacion" routerLinkActive="active" (click)="selectMenuItem('presentacion')">
+            <span class="menu-text">Antecedentes</span>
+          </a>
+        </li>
         <li>
           <a routerLink="/inicio" routerLinkActive="active" (click)="selectMenuItem('mapaCapacidades')">
             <span class="menu-text">Mapa de Capacidades</span>
@@ -102,7 +107,7 @@
       </span>
     </a>
     <ul *ngIf="isSubmenuOpen('arq')" class="sub-menu">
-      <li><a routerLink="/despliegue" routerLinkActive="active" (click)="selectMenuItem('despliegue')"><span class="menu-text">Digrama de despligue</span></a></li>
+
       <li><a routerLink="/arquitectura" routerLinkActive="active" (click)="selectMenuItem('arquitectura')"><span class="menu-text">Digrama de despligue</span></a></li>
     </ul>
 
@@ -115,6 +120,7 @@
         </span>
       </a>
       <ul *ngIf="isSubmenuOpen('devops')" class="sub-menu">
+        <li><a routerLink="/pipeline" routerLinkActive="active" (click)="selectMenuItem('pipeline')"><span class="menu-text">Pipeline</span></a></li>
         <li><a routerLink="/ci" routerLinkActive="active" (click)="selectMenuItem('ci')"><span class="menu-text">CI</span></a></li>
         <li><a routerLink="/cd" routerLinkActive="active" (click)="selectMenuItem('cd')"><span class="menu-text">CD</span></a></li>
       </ul>

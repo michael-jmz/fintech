@@ -1,0 +1,11 @@
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Asegura que el contenedor ocupe el 100% de la altura disponible */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

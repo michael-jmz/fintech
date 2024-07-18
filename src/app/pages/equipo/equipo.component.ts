@@ -17,10 +17,10 @@ export class EquipoComponent {
   equipo: TeamMember[] = [
     { name: 'MICHAEL JIMÉNEZ', role: 'Backend- Administrador del sistemas', photoUrl: 'assets/equipo/michael.jpeg' },
     { name: 'MARCO BRICEÑO​', role: 'Analista de sistemas', photoUrl: 'assets/equipo/marco.jpeg' },
-    { name: 'MIGUEL MOROCHO', role: 'Arquitecto', photoUrl: 'assets/equipo/predeterminada.png' },
-    { name: 'GILBERT SOLANO', role: 'Tester QA', photoUrl: 'assets/equipo/predeterminada.png' },
-    { name: 'DENNIS JIMÉNEZ', role: 'Seguridad- UI Frontend Developer', photoUrl: 'assets/equipo/predeterminada.png' },
-    { name: 'LUIS DIAZ', role: 'UI Frontend- Administrador Base de datos', photoUrl: 'assets/equipo/predeterminada.png' },
+    { name: 'MIGUEL MOROCHO', role: 'Arquitecto', photoUrl: 'assets/equipo/miguel.jpeg' },
+    { name: 'GILBERT SOLANO', role: 'Tester QA', photoUrl: 'assets/equipo/gilberth.jpeg' },
+    { name: 'DENNIS JIMÉNEZ', role: 'Seguridad- UI Frontend Developer', photoUrl: 'assets/equipo/denis.jpeg' },
+    { name: 'LUIS DIAZ', role: 'UI Frontend- Administrador Base de datos', photoUrl: 'assets/equipo/luis.jpeg' },
     // Agrega las demás propiedades según sea necesario
   ];
 

@@ -40,6 +40,7 @@ export class SidebarComponent implements OnInit {
     diagramas: false,
     despliegue: false,
     arquitectura: false,
+    pipeline:false,
     ci:false,
     cd:false,
   };
